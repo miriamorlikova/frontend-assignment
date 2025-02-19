@@ -48,3 +48,38 @@ export default tseslint.config({
   },
 })
 ```
+
+
+# Zadání 
+
+## 1) Načtení dat
+Načtěte data z API CoinGecko:
+
+**Endpoint:**  
+[`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd`](https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd)
+
+**Požadovaná data:**
+- `id` (Coin ID)
+- `symbol` (Symbol)
+- `current_price` (Current Price)
+- `market_cap` (Market Cap)
+- `total_volume` (Total Volume)
+- `last_updated` (Last Updated)
+- `price_change_percentage_24h` (24h Change %)
+
+---
+
+## 2) Tabulka (React + Tailwind)
+Vytvoř **responzivní tabulku** v **Reactu** s **Tailwind CSS**, která zobrazí výše uvedené údaje.
+
+---
+
+## 3) Stylování tabulky
+**Design by měl připomínat návrh** .  
+**Čas a datum** formátuj do čitelného formátu (např. `25 May 2023, 12:00`).  
+**Sloupec `24h Change (%)`**:
+- Pokud je hodnota **kladná** ➝ 🟢 **Zelená barva** 
+- Pokud je hodnota **záporná** ➝ 🔴 **Červená barva**
+- "Load more" tlačítko zobrazí nové okno, kde bude kompletní tabulka všech dostupných kryptoměn. 
+
+---
